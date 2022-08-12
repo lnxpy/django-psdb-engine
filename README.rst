@@ -2,7 +2,6 @@
 django-psdb-engine
 ==================
 
-
 .. image:: https://img.shields.io/pypi/v/django_psdb_engine.svg
         :target: https://pypi.python.org/pypi/django_psdb_engine
 
@@ -13,25 +12,31 @@ django-psdb-engine
         :target: https://django-psdb-engine.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
-
-
-
-Django PlanetScale database engine.
-
+Django `PlanetScale <https://planetscale.com>`_ database engine. This package is a better solution for `planetscale/django_psdb_engine <https://github.com/planetscale/django_psdb_engine>`_.
 
 * Free software: MIT license
-* Documentation: https://django-psdb-engine.readthedocs.io.
+
+Usage
+~~~~~
+Make this database engine ready in two simple steps. First thing first, install the package.
+
+.. code:: sh
+
+   $ pip install django-psdb-engine
 
 
-Features
---------
+And finally, update your databases configuration by changing the ``ENGINE`` field.
 
-* TODO
+.. code:: python
 
-Credits
--------
+   DATABASES = {
+     'default': {
+       'ENGINE': 'django_psdb_engine',
+       ...
+       'OPTIONS': {'ssl': {'ca': ...}}
+     }
+   }
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+Requirements
+~~~~~~~~~~~~
+- django >= 2.2
