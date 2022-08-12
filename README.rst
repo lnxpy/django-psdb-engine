@@ -17,7 +17,7 @@ Django `PlanetScale <https://planetscale.com>`_ database engine. This package is
 * Free software: MIT license
 
 Usage
-~~~~~
+-----
 Make this database engine ready in two simple steps. First thing first, install the package.
 
 .. code:: sh
@@ -38,5 +38,5 @@ And finally, update your databases configuration by changing the ``ENGINE`` fiel
    }
 
 Requirements
-~~~~~~~~~~~~
+------------
 - django >= 2.2
