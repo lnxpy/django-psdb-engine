@@ -11,7 +11,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'django>=2.2'
+    'django>=2.2',
+    'mysqlclient>=2.1.0',
 ]
 
 test_requirements = [ ]
