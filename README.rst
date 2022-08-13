@@ -41,4 +41,5 @@ And finally, update your databases configuration by changing the ``ENGINE`` fiel
 
 Requirements
 ------------
-- django >= 2.2
+- django>=2.2
+- mysqlclient>=2.1.0
