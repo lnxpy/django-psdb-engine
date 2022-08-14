@@ -41,7 +41,7 @@ setup(
     packages=find_packages(include=['django_psdb_engine', 'django_psdb_engine.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/lnxpy/django_psdb_engine',
+    url='https://github.com/lnxpy/django-psdb-engine',
     version='1.0.3',
     zip_safe=False,
 )
