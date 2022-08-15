@@ -37,7 +37,7 @@ And finally, update your databases configuration by changing the ``ENGINE`` fiel
      }
    }
 
-**Note**: Since Django uses the default utf8bm3 charset for your tables and it's not supported by PlanetScale's engine yet, you may need to add ``{"charset": "utf8bm4"}`` in order to migrate your changes and get it work.
+**Note**: Since Django uses the default utf8mb3 charset for your tables and it's not supported by PlanetScale's engine yet, you may need to add ``{"charset": "utf8mb4"}`` in order to migrate your changes and get it work.
 
 Requirements
 ------------
