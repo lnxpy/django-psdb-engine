@@ -37,9 +37,16 @@ And finally, update your databases configuration by changing the ``ENGINE`` fiel
      }
    }
 
-**Note**: Since Django uses the default utf8mb3 charset for your tables and it's not supported by PlanetScale's engine yet, you may need to add ``{"charset": "utf8mb4"}`` in order to migrate your changes and get it work.
+**Note**: Since Django uses the ``UTF-8`` charset and it points to ``utf8mb3`` in MySQL and this charset is deprecated in MySQL 8, you may need to add ``{"charset": "utf8mb4"}`` and migrate your chanegs with no problem.
+
+.. code:: diff
+
+   ...
+   -'OPTIONS': {'ssl': {'ca': os.environ.get('MYSQL_ATTR_SSL_CA')}}
+   +'OPTIONS': {'ssl': {'ca': os.environ.get('MYSQL_ATTR_SSL_CA')}, 'charset': 'utf8mb4'}
+   ...
 
 Requirements
 ------------
-- django>=2.2
-- mysqlclient>=2.1.0
+- django >= 2.2
+- mysqlclient >= 2.1.0
