@@ -4,11 +4,8 @@
 
 from setuptools import find_packages, setup
 
-with open("README.rst") as readme_file:
+with open("README.md") as readme_file:
     readme = readme_file.read()
-
-with open("HISTORY.rst") as history_file:
-    history = history_file.read()
 
 requirements = [
     "django>=2.2",
@@ -34,7 +31,7 @@ setup(
     description="Django PlanetScale database engine.",
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + "\n\n" + history,
+    long_description=readme,
     include_package_data=True,
     keywords="django_psdb_engine",
     name="django_psdb_engine",
