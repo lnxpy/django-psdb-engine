@@ -16,11 +16,11 @@ And finally, update your `DATABASES` configuration and change the `ENGINE` field
 
 ```python
 DATABASES = {
-  'default': {
-    'ENGINE': 'django_psdb_engine',
-    ...
-    'OPTIONS': {'ssl': {'ca': ...}}
-  }
+    'default': {
+      'ENGINE': 'django_psdb_engine',
+      ...
+      'OPTIONS': {'ssl': {'ca': ...}}
+    }
 }
 ```
 
