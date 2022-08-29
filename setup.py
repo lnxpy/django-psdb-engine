@@ -4,7 +4,7 @@
 
 from setuptools import find_packages, setup
 
-with open("README.md") as readme_file:
+with open("README.md", "r", encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 requirements = [
@@ -32,6 +32,7 @@ setup(
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
+    long_description_content_type='text/markdown',
     include_package_data=True,
     keywords="django_psdb_engine",
     name="django_psdb_engine",
