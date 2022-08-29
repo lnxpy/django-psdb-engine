@@ -34,7 +34,13 @@ setup(
     long_description=readme,
     long_description_content_type='text/markdown',
     include_package_data=True,
-    keywords='django_psdb_engine',
+    keywords=[
+        'django_psdb_engine',
+        'planetscale',
+        'django',
+        'engine',
+        'database'
+    ],
     name='django_psdb_engine',
     packages=find_packages(include=['django_psdb_engine', 'django_psdb_engine.*']),
     test_suite='tests',
