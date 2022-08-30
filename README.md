@@ -1,6 +1,6 @@
 ## django-psdb-engine
 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-psdb-engine) ![PyPI - Downloads](https://img.shields.io/pypi/dm/django-psdb-engine) ![Made for - PlanetScale](https://img.shields.io/badge/made%20for-PlanetScale-black?style=flat&logo=planetscale)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-psdb-engine) ![PyPI - Downloads](https://img.shields.io/pypi/dm/django-psdb-engine) ![Made for - PlanetScale](https://img.shields.io/badge/made%20for-PlanetScale-black?style=flat&logo=planetscale) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/lnxpy/django-psdb-engine/main.svg)](https://results.pre-commit.ci/latest/github/lnxpy/django-psdb-engine/main)
 
 This package helps you interact with your [PlanetScale](https://planetscale.com) databases in your Django projects in an easier way.
 
